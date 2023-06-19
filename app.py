@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-     return render_template('hello.html')
+    return 'Hello World!'
 
 #from flask import Flask, request, jsonify
 #from battery import predict_value
