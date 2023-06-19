@@ -4,7 +4,7 @@ import pickle
 
 def train_model():
     # importing data
-    df = pd.read_csv("battery capacity.csv", usecols=['Cycles  Days of Aging Test','Capacity [Ah]'])
+    df = pd.read_csv("battery capacity.csv", usecols=['Cycles / Days of Aging Test','Capacity [Ah]'])
 
     X = df.drop('Capacity [Ah]', axis=1)
     y = df['Capacity [Ah]']
@@ -30,11 +30,11 @@ def predict_value(data):
     model = load_model()
 
     # Make prediction using the loaded model
-    X_test = [[data]]
+    X_test = data
     prediction = model.predict(X_test)
 
     voltage = 400
-    prediction = prediction*voltage/1000
+    prediction = prediction * voltage / 1000
 
     return prediction
 
