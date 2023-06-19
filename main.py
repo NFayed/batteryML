@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
-from battery import predict_value
-import numpy as np
+#from battery import predict_value
+#import numpy as np
 app = Flask(__name__)
 
 @app.route('/predict', methods=['POST'])

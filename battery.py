@@ -1,6 +1,6 @@
-import pandas as pd
-from sklearn.linear_model import LinearRegression
-import pickle
+#import pandas as pd
+#from sklearn.linear_model import LinearRegression
+#import pickle
 
 # def train_model():
 #     # importing data
